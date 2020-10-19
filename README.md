@@ -1,5 +1,8 @@
 # Intent Classifier
 
+### Requirements
+`pip install wget tensorflow==1.5 pandas numpy keras`
+
 ### Training
 For training, check: [intent_classification.ipynb](https://github.com/horizons-ml/intent-classifier/blob/main/intent_classification.ipynb)
 
