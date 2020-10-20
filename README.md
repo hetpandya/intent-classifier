@@ -1,5 +1,7 @@
 # Intent Classifier
 
+Code for blog post [Creating Your own Intent Classifier](https://medium.com/analytics-vidhya/creating-your-own-intent-classifier-b86e000a4926).
+
 ### Requirements
 `pip install wget tensorflow==1.5 pandas numpy keras`
 
