@@ -13,6 +13,7 @@ For training, check: [intent_classification.ipynb](https://github.com/horizons-m
 import pickle
 from tensorflow.python.keras.models import load_model
 from tensorflow.python.keras.preprocessing.sequence import pad_sequences
+import numpy as np
 
 class IntentClassifier:
     def __init__(self,classes,model,tokenizer,label_encoder):
@@ -26,7 +27,7 @@ class IntentClassifier:
         self.test_keras = self.tokenizer.texts_to_sequences(self.text)
         self.test_keras_sequence = pad_sequences(self.test_keras, maxlen=16, padding='post')
         self.pred = self.classifier.predict(self.test_keras_sequence)
-        return label_encoder.inverse_transform(np.argmax(self.pred,1))[0]
+        return self.label_encoder.inverse_transform(np.argmax(self.pred,1))[0]
  
 model = load_model('models/intents.h5')
 
