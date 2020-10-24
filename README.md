@@ -12,6 +12,7 @@ For training, check: [intent_classification.ipynb](https://github.com/horizons-m
 ```
 import pickle
 from tensorflow.python.keras.models import load_model
+from tensorflow.python.keras.preprocessing.sequence import pad_sequences
 
 class IntentClassifier:
     def __init__(self,classes,model,tokenizer,label_encoder):
