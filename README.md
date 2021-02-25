@@ -6,7 +6,7 @@ Code for Medium blog post [Creating Your own Intent Classifier](https://medium.c
 `pip install wget tensorflow==1.5 pandas numpy keras`
 
 ### Training
-For training, check: [intent_classification.ipynb](https://github.com/horizons-ml/intent-classifier/blob/main/intent_classification.ipynb)
+For training, check: [intent_classification.ipynb](https://github.com/thehetpandya/intent-classifier/blob/main/intent_classification.ipynb)
 
 ### Inference
 ```
